@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hasil</title>
 </head>
 <body>
+    <h1>
+        <center>
+            {{nama}}
+        </center>
+    </h1>
+    <h2>
+        <center>
+            <img src="{{gambar}}" alt="{{gambar}}" width='200'>
+        </center>
+    </h2>
+    <h2>
+        <center>
+            Id: {{id}}<br>
+            Berat: {{berat}}<br>
+            Tinggi: {{berat}}<br>
+        </center>
+    </h2>
     <center>
-        <h1>{{namapokemon}}</h1>
-        <br><br>
-        <div class="header">
-                <nav>
-                    <ul class="nav nav-pills pull-right">
-                        <li role="presentation">{{id}}
-                        </li>
-                        <li role="presentation">{{tinggi}}
-                        </li>
-                        <li role="presentation">{{berat}}
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <form action="http://localhost:5000/">
+            <p> 
+            <input type="submit" value="Kembali">
+            </p>
+        </form>
     </center>
 </body>
 </html>
