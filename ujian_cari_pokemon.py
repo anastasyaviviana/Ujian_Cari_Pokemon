@@ -20,7 +20,7 @@ def post():
     id=data.json()['id']
     berat=data.json()['weight']
     tinggi=data.json()['height']
-    return render_template('pokemon.html',nama=nama,gambar=gambar,id=id,berat=berat,tinggi=tinggi)
+    return render_template('pokemon.html',nama=nama.capitalize(),gambar=gambar,id=id,berat=berat,tinggi=tinggi)
 
 @app.route('/notFound')
 def notfound():
